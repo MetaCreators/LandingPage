@@ -1,6 +1,6 @@
 function HeroSection2() {
   return (
-    <div className="bg-sky-950 flex justify-between text-black h-screen border-b border-black">
+    <div className="bg-sky-950 flex justify-between text-black h-screen">
       <div className="w-1/2 flex justify-center items-center">
         {/* <img src={tailor} className="h-80 w-80 rounded-lg" /> */}hi
       </div>
