@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import HeroSection2 from "./components/HeroSection2";
 import HeroSection3 from "./components/HeroSection3";
 import HeroSection4 from "./components/HeroSection4";
@@ -15,6 +16,7 @@ function App() {
       <HeroSection3 />
       <HeroSection4 />
       <HeroSection5 />
+      <Footer />
     </div>
   );
 }
