@@ -1,6 +1,6 @@
 function HeroSection4() {
   return (
-    <div className="bg-white flex justify-between text-black h-screen border-b border-black">
+    <div className="bg-white flex justify-between text-black h-screen">
       <div className="w-1/2 flex justify-center items-center text-left">
         <div className="w-3/4 space-y-6">
           <div className="text-wrap text-6xl font-bold text-blue-950">
