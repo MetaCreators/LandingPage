@@ -1,98 +1,143 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { FunctionComponent } from "react";
+import logo from "../assets/logo.png"
+import rectangle6 from "../assets/Rectangle 6.png"
 
-function Footer() {
+
+export type FooterType = {
+  className?: string;
+};
+
+const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
   return (
-    <footer className="bg-sky-950 text-white border-t">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-between py-12">
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-8 sm:mb-0">
-            <h2 className="text-lg font-semibold mb-4">Company</h2>
-            <ul className="space-y-2">
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  About Us
-                </div>
-              </li>
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Careers
-                </div>
-              </li>
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-8 sm:mb-0">
-            <h2 className="text-lg font-semibold mb-4">Products</h2>
-            <ul className="space-y-2">
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Software
-                </div>
-              </li>
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Hardware
-                </div>
-              </li>
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Services
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-8 sm:mb-0">
-            <h2 className="text-lg font-semibold mb-4">Resources</h2>
-            <ul className="space-y-2">
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
-                </div>
-              </li>
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Documentation
-                </div>
-              </li>
-              <li>
-                <div className="text-muted-foreground hover:text-foreground transition-colors">
-                  Support
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4">
-            <h2 className="text-lg font-semibold mb-4">Connect</h2>
-            <div className="flex space-x-4">
-              <div className="text-muted-foreground hover:text-foreground transition-colors">
-                <Twitter className="h-6 w-6" />
-                <span className="sr-only">Twitter</span>
-              </div>
-              <div className="text-muted-foreground hover:text-foreground transition-colors">
-                <Facebook className="h-6 w-6" />
-                <span className="sr-only">Facebook</span>
-              </div>
-              <div className="text-muted-foreground hover:text-foreground transition-colors">
-                <Instagram className="h-6 w-6" />
-                <span className="sr-only">Instagram</span>
-              </div>
-              <div className="text-muted-foreground hover:text-foreground transition-colors">
-                <Linkedin className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
-              </div>
-            </div>
-          </div>
+    <footer
+      style={{
+        alignSelf: "stretch",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        position: "relative",
+        maxWidth: "100%",
+        textAlign: "center",
+        fontSize: "96px",
+        color: "#fff",
+        fontFamily: "Inter",
+      }}
+      className={className}
+    >
+      <img
+        style={{
+          height: "1749px",
+          width: "2257px",
+          position: "absolute",
+          margin: "0",
+          right: "256px",
+          bottom: "-583px",
+          borderRadius: "184px",
+        }}
+        alt=""
+        src={rectangle6}
+      />
+      <div
+        style={{
+          flex: "1",
+          backgroundColor: "#0c091d",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "flex-start",
+          padding: "351px 242px 222px",
+          boxSizing: "border-box",
+          gap: "121px",
+          maxWidth: "100%",
+          zIndex: "4",
+        }}
+      >
+        <div
+          style={{
+            width: "2770px",
+            height: "1360px",
+            position: "relative",
+            backgroundColor: "#0c091d",
+            display: "none",
+            maxWidth: "100%",
+          }}
+        />
+        <div
+          style={{
+            alignSelf: "stretch",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "center",
+            maxWidth: "100%",
+          }}
+        >
+          <img
+            style={{
+              width: "400px",
+              position: "relative",
+              borderRadius: "42px",
+              maxHeight: "100%",
+              objectFit: "cover",
+              maxWidth: "100%",
+              zIndex: "5",
+            }}
+            loading="lazy"
+            alt=""
+            src={logo}
+          />
         </div>
-        <div className="border-t py-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} MetaCreators. All rights reserved.
+        <div
+          style={{
+            alignSelf: "stretch",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            gap: "112px",
+          }}
+        >
+          <h1
+            style={{
+              margin: "0",
+              alignSelf: "stretch",
+              position: "relative",
+              fontSize: "inherit",
+              letterSpacing: "0.02em",
+              fontStyle: "italic",
+              fontWeight: "200",
+              fontFamily: "inherit",
+              zIndex: "5",
+            }}
+          >
+            Content creation will never be the same again
+          </h1>
+          <div
+            style={{
+              alignSelf: "stretch",
+              position: "relative",
+              fontSize: "64px",
+              letterSpacing: "0.02em",
+              zIndex: "5",
+            }}
+          >
+            <span>
+              <i style={{ fontWeight: "300" }}>Join</i>
+            </span>
+            <b style={{ color: "#d94fd5" }}>
+              <span>{` `}</span>
+              <span>Lithouse</span>
+            </b>
+            <span>
+              <i style={{ fontWeight: "300" }}> and lead the way into a</i>
+              <b style={{ fontFamily: "Inter" }}> bold, new reality.</b>
+            </span>
+          </div>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
