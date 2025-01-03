@@ -54,7 +54,7 @@ const Section = styled.section`
 `;
 
 const Hero = styled.div`
-  background-image: url("src/assets/artist3.png");
+  background-image: url("/images/artist3.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -147,7 +147,7 @@ const CallToAction = styled.div`
 
 const CallToAction2 = styled.div`
   width: 100vw;
-  background-image: url("src/assets/metaverse.jpg");
+  background-image: url("/images/metaverse.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -200,13 +200,12 @@ const CallToAction2 = styled.div`
   }
 `;
 
-
 const Footer = styled.footer`
   background-color: #000;
   padding: 40px 20px;
   text-align: center;
   color: #fff;
-  width:100vh;
+  width: 100vh;
 
   img {
     width: 100px; /* Adjust as necessary */
@@ -233,7 +232,6 @@ const Footer = styled.footer`
     }
   }
 `;
-
 
 // Component
 const LandingPage: FunctionComponent = () => {
@@ -263,58 +261,59 @@ const LandingPage: FunctionComponent = () => {
       <Section>
         <h2>Explore Your Talents</h2>
         <Features>
-          <img src="src/assets/street.png" alt="Cityscape" />
-          <img src="src/assets/candid.png" alt="Robot" />
-          <img src="src/assets/scull.png" alt="Meta" />
+          <img src="/images/street.png" alt="Cityscape" />
+          <img src="/images/candid.png" alt="Robot" />
+          <img src="/images/scull.png" alt="Meta" />
         </Features>
       </Section>
 
       {/* Call to Action Section */}
       <CallToAction>
         <h2>
-          Effortlessly generate <span>high performance</span> thumbnails, script and descriptions in just a <span>few clicks</span>
+          Effortlessly generate <span>high performance</span> thumbnails, script
+          and descriptions in just a <span>few clicks</span>
         </h2>
         <button>Try now</button>
       </CallToAction>
 
       {/* Second Call to Action Section */}
 
-   
       <CallToAction2>
-        <div >
+        <div>
           {/* <div style={{}}></div> */}
 
-        <div>
-        <h2>Step Into the <span>Future</span> of Social Interaction!</h2>
-        {/* <p>
+          <div>
+            <h2>
+              Step Into the <span>Future</span> of Social Interaction!
+            </h2>
+            {/* <p>
           Transform into your avatar, explore virtual rooms, and connect with
           others through chat or video calls in a <span>whole new reality</span>!
         </p> */}
 
-        {/* <div style={{height:'', visibility:'hidden'}}></div>  */}
+            {/* <div style={{height:'', visibility:'hidden'}}></div>  */}
 
+            <div style={{ height: "100px" }}></div>
 
-          <div style={{height:'100px'}}></div>
-
-        <button>Try Virtual House Now</button>
+            <button>Try Virtual House Now</button>
+          </div>
         </div>
-
-        </div>  
-        <p style={{marginBottom:'16px'}}>
+        <p style={{ marginBottom: "16px" }}>
           Transform into your avatar, explore virtual rooms, and connect with
-          others through chat or video calls in a <span>whole new reality</span>!
+          others through chat or video calls in a <span>whole new reality</span>
+          !
         </p>
       </CallToAction2>
 
       {/* Footer */}
       <Footer>
-  <img src="src/assets/logo.png" alt="Logo" />
-  <h3>Content creation will never be the same again</h3>
-  <p>
-    Join <span>Lithouse</span> and lead the way into a <span>bold, new reality</span>.
-  </p>
-</Footer>
-
+        <img src="/images/logo.png" alt="Logo" />
+        <h3>Content creation will never be the same again</h3>
+        <p>
+          Join <span>Lithouse</span> and lead the way into a{" "}
+          <span>bold, new reality</span>.
+        </p>
+      </Footer>
     </Container>
   );
 };
